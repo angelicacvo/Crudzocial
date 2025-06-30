@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "ff76",
+      "name": "admin",
+      "lastName": "admin",
+      "email": "4dm1n00001@gmail.com",
+      "phone": "3236285567",
+      "country": "United States",
+      "city": "Los Angeles",
+      "address": "123 Admin St",
+      "zipCode": "90001",
+      "password": "admin123"
+    },
+    {
+      "id": "aa12",
+      "name": "Luis Eduardo",
+      "lastName": "Martinez Perez",
+      "email": "lumar85@gmail.com",
+      "phone": "3236285567",
+      "country": "Colombia",
+      "city": "Cali",
+      "address": "Av. 8N No. 16N-25, Valle",
+      "zipCode": "760036",
+      "password": "contra123"
+    },
+    {
+      "id": "gg56",
+      "name": "Maria Elena",
+      "lastName": "Ruiz Jimenez",
+      "email": "meru2002@gmail.com",
+      "phone": "3125726422",
+      "country": "Colombia",
+      "city": "Medellin",
+      "address": "Cr 50 No. 52-50 DE 116",
+      "zipCode": "050015",
+      "password": "20meru02"
+    }
+  ]
+}
