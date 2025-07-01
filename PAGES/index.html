@@ -10,18 +10,20 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet"  href="../assets/CSS/styles.css" />
+    <link rel="stylesheet" href="../assets/CSS/styles.css" />
     <script
       src="https://kit.fontawesome.com/ea4c7975d5.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="index__container">
     <header>
-      <footer>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="navbar__container">
+        <h1 class="navbar__container--h1">
+          <i class="fa-solid fa-mug-hot"></i> CrudZocial Coffee
+        </h1>
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <i class="fa-solid fa-mug-hot"></i>
             <button
               class="navbar-toggler"
               type="button"
@@ -52,144 +54,159 @@
             </div>
           </div>
         </nav>
-      </footer>
+      </div>
     </header>
 
-    <main>
-      <div id="login" class="card text-center">
-        <div class="card-header">Iniciar sesión</div>
-        <div class="card-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary" id="loginBtn">
-              Ingresar
-            </button>
-          </form>
+    <main class="index__main">
+      <div class="login__container">
+        <div id="login" class="card login__card text-center">
+          <div class="card-header">Iniciar sesión</div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <button type="submit" class="btn enter__btn" id="loginBtn">
+                Ingresar
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+      <div class="login__container">
+        <div id="register" class="card register__card text-center">
+          <div class="card-header">Register</div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="registerSectionName" class="form-label"
+                  >Nombres</label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="registerSectionName"
+                  aria-describedby="registerSectionName"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionLastname" class="form-label"
+                  >Apellidos</label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="registerSectionLastname"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionPhone" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerSectionPhone"
+                  aria-describedby="registerSectionPhone"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionPhone" class="form-label"
+                  >Teléfono</label
+                >
+                <input
+                  type="phone"
+                  class="form-control"
+                  id="registerSectionPhone"
+                  aria-describedby="registerSectionPhone"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionPhone" class="form-label"
+                  >País</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerSectionPhone"
+                  aria-describedby="registerSectionPhone"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionCity" class="form-label"
+                  >Ciudad</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerSectionCity"
+                  aria-describedby="registerSectionCity"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionAddress" class="form-label"
+                  >Dirección</label
+                >
+                <input
+                  type="address"
+                  class="form-control"
+                  id="registerSectionAddress"
+                  aria-describedby="registerSectionAddress"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerSectionPostal" class="form-label"
+                  >Código postal</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerSectionPostal"
+                  aria-describedby="registerSectionPostal"
+                />
+              </div>
 
-      <div id="register" class="card text-center">
-        <div class="card-header">Register</div>
-        <div class="card-body">
-          <form>
-            <div class="mb-3">
-              <label for="registerSectionName" class="form-label"
-                >Nombres</label
-              >
-              <input
-                type="name"
-                class="form-control"
-                id="registerSectionName"
-                aria-describedby="registerSectionName"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionLastname" class="form-label"
-                >Apellidos</label
-              >
-              <input
-                type="name"
-                class="form-control"
-                id="registerSectionLastname"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionPhone" class="form-label">Contraseña</label>
-              <input
-                type="text"
-                class="form-control"
-                id="registerSectionPhone"
-                aria-describedby="registerSectionPhone"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionPhone" class="form-label"
-                >Teléfono</label
-              >
-              <input
-                type="phone"
-                class="form-control"
-                id="registerSectionPhone"
-                aria-describedby="registerSectionPhone"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionPhone" class="form-label">País</label>
-              <input
-                type="text"
-                class="form-control"
-                id="registerSectionPhone"
-                aria-describedby="registerSectionPhone"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionCity" class="form-label">Ciudad</label>
-              <input
-                type="text"
-                class="form-control"
-                id="registerSectionCity"
-                aria-describedby="registerSectionCity"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionAddress" class="form-label"
-                >Dirección</label
-              >
-              <input
-                type="address"
-                class="form-control"
-                id="registerSectionAddress"
-                aria-describedby="registerSectionAddress"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerSectionPostal" class="form-label"
-                >Código postal</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="registerSectionPostal"
-                aria-describedby="registerSectionPostal"
-              />
-            </div>
-
-            <button type="submit" class="btn btn-primary" id="registerBtn">
-              Registrarse
-            </button>
-          </form>
+              <button type="submit" class="btn enter__btn" id="registerBtn">
+                Registrarse
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
+
+    <footer class="main__footer container-fluid">
+      <p>Celula CookiEaters-Clanes: Van Rossum & Ritchie</p>
+      <p>Prueba CrudZocial - Honores a Crudzaso & Riwi</p>
+      <p>Modulo 3 - Javascript 27 de junio, 2025</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

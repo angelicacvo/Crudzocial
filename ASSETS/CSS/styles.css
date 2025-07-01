@@ -90,6 +90,64 @@ main {
   margin-bottom: 1rem;
 }
 
+.dropdown-toggle,
+.log-out__bnt,
+.send__btn,
+.enter__btn {
+  background-color: var(--claret);
+  color: white;
+}
+
+.publish_btn:hover,
+.dropdown-toggle:hover,
+.log-out__bnt:hover,
+.send__btn:hover,
+.enter__btn:hover {
+  background-color: var(--claret--hover);
+}
+
+
+/* login */
+.navbar__container {
+  margin: 4rem 0 1rem 0;
+  display: grid;
+  justify-content: center;
+}
+
+.navbar {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.navbar__container--h1 {
+  width: 100%;
+}
+
+.index__container{
+  background-color: var(--background-color);
+}
+
+.login__container{
+  margin: 0 15rem 2rem 15rem;
+}
+
+.card-header{
+  background-color: var(--sepia);
+  color: var(--text-color);
+  border: none;
+}
+
+.mb-3{
+  padding: 0 8rem 0 8rem;
+}
+
+.card-body{
+  border: 5px solid var(--sepia);
+  background-color: rgba(var(--sepia-rgb), 0.5);
+}
+
+
 /* profile */
 
 .profile__main {
@@ -162,20 +220,6 @@ main {
   background-color: var(--claret);
 }
 
-.dropdown-toggle,
-.log-out__bnt, 
-.send__btn {
-  background-color: var(--claret);
-  color: white;
-}
-
-.publish_btn:hover,
-.dropdown-toggle:hover,
-.log-out__bnt:hover,
-.send__btn:hover
- {
-  background-color: var(--claret--hover);
-}
 
 .galery__card,
 .text-body-secondary,
