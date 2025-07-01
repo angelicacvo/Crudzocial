@@ -106,7 +106,6 @@ main {
   background-color: var(--claret--hover);
 }
 
-
 /* login */
 .navbar__container {
   margin: 4rem 0 1rem 0;
@@ -124,29 +123,53 @@ main {
   width: 100%;
 }
 
-.index__container{
+.index__container {
   background-color: var(--background-color);
 }
 
-.login__container{
+.login__container {
   margin: 0 15rem 2rem 15rem;
 }
 
-.card-header{
+.card-header {
   background-color: var(--sepia);
   color: var(--text-color);
   border: none;
 }
 
-.mb-3{
+.mb-3 {
   padding: 0 8rem 0 8rem;
 }
 
-.card-body{
+.card-body {
   border: 5px solid var(--sepia);
   background-color: rgba(var(--sepia-rgb), 0.5);
 }
 
+.profile__name {
+  text-align: center;
+}
+
+.logout__btn {
+  background-color: var(--claret);
+  color: var(--principal--text);
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+
+.login_btn {
+  background-color: var(--claret);
+  color: var(--principal--text);
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.login_btn:hover {
+  background-color: var(--claret--hover);
+  color: black;
+}
 
 /* profile */
 
@@ -191,11 +214,12 @@ main {
 
 /* home */
 
-.card__container {
+#galleryCards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
+  justify-items: center;
 }
 
 .notes__input {
@@ -220,6 +244,9 @@ main {
   background-color: var(--claret);
 }
 
+#galleryCards {
+  margin: 0 4rem;
+}
 
 .galery__card,
 .text-body-secondary,
@@ -258,6 +285,149 @@ main {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 10rem;
   margin-bottom: 1rem;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgba(var(--sepia-rgb), 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--earth-yellow);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-card__img {
+  padding: 1rem;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--earth-yellow);
+  filter: brightness(0.95) contrast(1.05);
+  border-radius: 5px;
+}
+
+.gallery-card__body {
+  padding: 1rem;
+  background-color: rgba(var(--sepia-rgb), 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.gallery-card__text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.4;
+  max-height: 2.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.gallery-card__date {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.gallery-card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.gallery-card__buttons .btn {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-card__buttons .btn-primary {
+  background-color: var(--claret);
+  color: white;
+}
+
+.gallery-card__buttons .btn-primary:hover {
+  background-color: var(--claret--hover);
+  transform: scale(1.05);
+}
+
+.gallery-card__buttons .btn-danger {
+  background-color: #a83232;
+  color: white;
+}
+
+.gallery-card__buttons .btn-danger:hover {
+  background-color: #861d1d;
+  transform: scale(1.05);
+}
+
+.custom-note {
+  background-color: rgba(var(--sepia-rgb), 0.2);
+  border: 2px solid var(--earth-yellow);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.custom-note:hover {
+  background-color: rgba(var(--sepia-rgb), 0.3);
+}
+
+.custom-note__text {
+  flex-grow: 1;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  padding-right: 1rem;
+}
+
+.custom-note__delete {
+  background: transparent;
+  border: none;
+  color: var(--claret);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.custom-note__delete:hover {
+  color: var(--claret--hover);
+}
+
+.logs-container {
+  padding: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.log-entry {
+  padding: 1rem;
+  background-color: #f4f4f4;
+  margin-bottom: 1rem;
+  border-radius: 6px;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
