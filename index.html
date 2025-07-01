@@ -37,17 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#register"
-                    >Registro</a
-                  >
+                <a class="nav-link active" aria-current="page" href="#register" id="showRegister">Registro</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#login"
-                    >Iniciar sesión</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#login" id="showLogin">Iniciar sesión</a>
                 </li>
               </ul>
             </div>
@@ -57,7 +50,7 @@
     </header>
 
     <main>
-      <div id="login" class="card text-center">
+      <div id="login" class="card text-center d-none">
         <div class="card-header">Iniciar sesión</div>
         <div class="card-body">
           <form>
@@ -89,7 +82,7 @@
         </div>
       </div>
 
-      <div id="register" class="card text-center">
+      <div id="register" class="card text-center d-none">
         <div class="card-header">Register</div>
         <div class="card-body">
           <form>
@@ -125,12 +118,12 @@
             </div>
             <div class="mb-3">
               <label for="registerSectionPhone" class="form-label">Contraseña</label>
-              <input
-                type="text"
-                class="form-control"
-                id="registerSectionPhone"
-                aria-describedby="registerSectionPhone"
-              />
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerSectionPassword"
+                  aria-describedby="registerSectionPassword"
+                />
             </div>
             <div class="mb-3">
               <label for="registerSectionPhone" class="form-label"

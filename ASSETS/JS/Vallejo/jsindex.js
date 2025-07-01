@@ -84,6 +84,8 @@ registerBtn.addEventListener("click", function (e) {
   const city = document.getElementById("registerSectionCity").value.trim();
   const address = document.getElementById("registerSectionAddress").value.trim();
   const zipCode = document.getElementById("registerSectionPostal").value.trim();
+  const password = document.getElementById("registerSectionPassword").value.trim();
+
 
   if (!name || !lastName || !email || !phone || !country || !city || !address || !zipCode || !password) { // Decimos que si algun campo esta vacio (! significa NO), envia la alerta de que hay un campo vacio
     alert("Falta llenar un campo");
@@ -115,4 +117,22 @@ registerBtn.addEventListener("click", function (e) {
 
   alert("Registro exitoso");
   document.querySelector("#register form").reset(); // Limpiamos el formulario despues de que el registro fue exitoso
+});
+
+const loginSection = document.getElementById("login");
+const registerSection = document.getElementById("register");
+
+const showLogin = document.getElementById("showLogin");
+const showRegister = document.getElementById("showRegister");
+
+showLogin.addEventListener("click", function (e) {
+  e.preventDefault();
+  loginSection.classList.remove("d-none");
+  registerSection.classList.add("d-none");
+});
+
+showRegister.addEventListener("click", function (e) {
+  e.preventDefault();
+  registerSection.classList.remove("d-none");
+  loginSection.classList.add("d-none");
 });
