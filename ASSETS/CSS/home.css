@@ -14,7 +14,7 @@
 
 .container__overlay{
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 8fr 1fr;
 }
 
 .overlay__profile{
@@ -36,7 +36,6 @@
     background-color: #6a381fff;
     color: #dcab6bff;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position:absolute;
     bottom: 0;
 }
 
