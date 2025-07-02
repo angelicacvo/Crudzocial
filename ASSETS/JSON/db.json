@@ -220,6 +220,18 @@
       "userId": "ff76",
       "action": "Inició sesión",
       "timestamp": "2025-07-01T21:49:10.442Z"
+    },
+    {
+      "id": "247f",
+      "userId": "ff76",
+      "action": "Inició sesión",
+      "timestamp": "2025-07-01T22:08:26.375Z"
+    },
+    {
+      "id": "e68b",
+      "userId": "ff76",
+      "action": "Eliminó una publicación",
+      "timestamp": "2025-07-01T22:09:56.832Z"
     }
   ]
 }
