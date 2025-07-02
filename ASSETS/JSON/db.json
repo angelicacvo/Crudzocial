@@ -13,6 +13,18 @@
       "password": "admin123"
     },
     {
+      "id": "9de1",
+      "name": "jeims",
+      "lastName": "velez",
+      "email": "jeims1221jeims@gmail.com",
+      "phone": "3236285567",
+      "country": "Colombia",
+      "city": "Medellin",
+      "address": "san francisco",
+      "zipCode": "055413",
+      "password": "admin123"
+    },
+    {
       "id": "aa12",
       "name": "Luis Eduardo",
       "lastName": "Martinez Perez",
@@ -35,6 +47,22 @@
       "address": "Cr 50 No. 52-50 DE 116",
       "zipCode": "050015",
       "password": "20meru02"
+    },
+    {
+      "id": "63af",
+      "name": "asfdsadfasdf",
+      "lastName": "asdfasdfasdf",
+      "email": "asdfasdfasdf",
+      "phone": "asdfasdfasd",
+      "country": "asdfasdfasdf",
+      "city": "asdfasdfasdf",
+      "address": "asdfasdfasdf",
+      "zipCode": "asdfasdfasdf",
+      "password": "asdfasdfasdf"
     }
-  ]
+  ],
+  "images": [],
+  "notes": [],
+  "posts": [],
+  "logs": []
 }
